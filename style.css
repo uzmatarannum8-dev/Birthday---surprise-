@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #21070e;
+    color: #f5e8df;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 22px;
+    background:
+        radial-gradient(circle at top, #641b2c, transparent 55%),
+        linear-gradient(145deg, #21070e, #3b0c19, #16050a);
+}
+
+.top-text,
+.letter-small {
+    color: #d6ad83;
+    font-size: 10px;
+    letter-spacing: 4px;
+    line-height: 2;
+}
+
+.rose {
+    font-size: 45px;
+    margin: 25px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.welcome h1 {
+    color: #e8c49e;
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 310px;
+    color: #e4cfc5;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+button {
+    margin-top: 35px;
+    padding: 15px 30px;
+    border: 1px solid #c69a70;
+    background: transparent;
+    color: #f0d4b6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active {
+    background: #c69a70;
+    color: #21070e;
+}
+
+.date {
+    margin-top: 40px;
+    color: #c69a70;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.letter {
+    display: none;
+    padding: 65px 22px;
+    background: #21070e;
+}
+
+.letter.show {
+    display: block;
+}
+
+.letter > h2 {
+    color: #e8c49e;
+    font-size: 29px;
+    margin: 25px 0;
+}
+
+.letter > p:not(.letter-small) {
+    max-width: 520px;
+    margin: 20px auto;
+    color: #eadbd2;
+    font-size: 13px;
+    line-height: 2.2;
+    font-weight: 300;
+}
+
+.letter h3 {
+    color: #d6ad83;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.letter .signature {
+    font-style: italic;
+}
+
+.photo-section {
+    margin-top: 90px;
+}
+
+.photo-section h2 {
+    color: #e8c49e;
+    font-size: 28px;
+    margin: 20px 0 35px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.photo-frame {
+    width: 240px;
+    padding: 10px 10px 18px;
+    background: #f1e5d8;
+    color: #54202b;
+    transform: rotate(-2deg);
+    box-shadow: 0 10px 30px #00000055;
+}
+
+.photo-frame:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    background: #d8c4b7;
+}
+
+.photo-frame p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.birthday-wish {
+    margin-top: 100px;
+    padding: 60px 10px;
+    border-top: 1px solid #75404a;
+}
+
+.birthday-wish h2 {
+    color: #d6ad83;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.birthday-wish h1 {
+    color: #e8c49e;
+    font-size: 34px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.birthday-wish p {
+    max-width: 450px;
+    margin: 20px auto;
+    color: #eadbd2;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.birthday-wish .final-line {
+    color: #d6ad83;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+}
